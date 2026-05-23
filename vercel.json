@@ -1,0 +1,5 @@
+{
+  "buildCommand": "echo 'This is a monorepo. Please deploy from artifacts/hamza-portfolio or artifacts/mockup-sandbox'",
+  "outputDirectory": ".",
+  "installCommand": "corepack enable && pnpm install --no-frozen-lockfile"
+}

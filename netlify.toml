@@ -1,0 +1,20 @@
+# Root Netlify Configuration
+# This is a monorepo - deploy individual artifacts from their subdirectories
+
+[build]
+  command = "echo 'This is a monorepo. Please deploy from artifacts/hamza-portfolio or artifacts/mockup-sandbox'"
+  publish = "."
+
+[build.environment]
+  NODE_VERSION = "20"
+  PNPM_VERSION = "9.0.0"
+
+# To deploy hamza-portfolio:
+# Set base directory to: artifacts/hamza-portfolio
+# Build command: corepack enable && pnpm install --no-frozen-lockfile && pnpm run build
+# Publish directory: artifacts/hamza-portfolio/dist
+
+# To deploy mockup-sandbox:
+# Set base directory to: artifacts/mockup-sandbox
+# Build command: corepack enable && pnpm install --no-frozen-lockfile && pnpm run build
+# Publish directory: artifacts/mockup-sandbox/dist

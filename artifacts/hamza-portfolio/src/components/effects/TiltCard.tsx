@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 
-export function TiltCard({ children, className = "" }: { children: React.ReactNode; className?: string }) {
+export function TiltCard({ children, className = "", style }: { children: React.ReactNode; className?: string; style?: React.CSSProperties }) {
   const cardRef = useRef<HTMLDivElement>(null);
   const [tilt, setTilt] = useState({ x: 0, y: 0 });
   const [isHovered, setIsHovered] = useState(false);
@@ -38,7 +38,8 @@ export function TiltCard({ children, className = "" }: { children: React.ReactNo
       style={{
         transform: `perspective(1000px) rotateX(${tilt.x}deg) rotateY(${tilt.y}deg) ${isHovered ? 'translateZ(20px)' : 'translateZ(0)'}`,
         boxShadow: isHovered ? '0 20px 40px rgba(0,240,255,0.2), inset 0 1px 0 rgba(255,255,255,0.1)' : undefined,
-        borderColor: isHovered ? 'rgba(0,240,255,0.3)' : 'rgba(0,240,255,0.12)'
+        borderColor: isHovered ? 'rgba(0,240,255,0.3)' : 'rgba(0,240,255,0.12)',
+        ...style
       }}
     >
       {isHovered && (

@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 export function CustomCursor() {
   const outerRef = useRef<HTMLDivElement>(null);
   const innerRef = useRef<HTMLDivElement>(null);
-  const requestRef = useRef<number>();
+  const requestRef = useRef<number | undefined>(undefined);
   
   const mouse = useRef({ x: 0, y: 0 });
   const outerPos = useRef({ x: 0, y: 0 });

@@ -40,7 +40,7 @@ class Particle {
     }
   }
 
-  draw(ctx: CanvasRenderingContextCanvas) {
+  draw(ctx: CanvasRenderingContext2D) {
     ctx.beginPath();
     ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
     ctx.fillStyle = this.color;
@@ -53,7 +53,7 @@ class Particle {
 
 export function ParticleCanvas() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const requestRef = useRef<number>();
+  const requestRef = useRef<number | undefined>(undefined);
   const mouseRef = useRef({ x: -1, y: -1 });
 
   useEffect(() => {

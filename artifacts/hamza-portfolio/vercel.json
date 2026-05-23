@@ -1,8 +1,9 @@
 {
   "buildCommand": "pnpm run build",
-  "outputDirectory": "dist",
-  "installCommand": "corepack enable && pnpm install --no-frozen-lockfile",
+  "devCommand": "pnpm run dev",
+  "installCommand": "pnpm install --no-frozen-lockfile",
   "framework": "vite",
+  "outputDirectory": "dist",
   "rewrites": [
     {
       "source": "/(.*)",

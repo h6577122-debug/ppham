@@ -63,7 +63,7 @@ export function Contact() {
                 <div className="w-10 h-10 rounded-full bg-[rgba(255,255,255,0.03)] border border-[var(--border-glow)] flex items-center justify-center text-[var(--neon-cyan)]">
                   <Mail size={18} />
                 </div>
-                <span className="font-body">hamza@powerplayer.dev</span>
+                <span className="font-body">powerplayer3748@gmail.com</span>
               </div>
               <div className="flex items-center gap-4 text-[var(--text-muted)]">
                 <div className="w-10 h-10 rounded-full bg-[rgba(255,255,255,0.03)] border border-[var(--border-glow)] flex items-center justify-center text-[var(--neon-cyan)]">

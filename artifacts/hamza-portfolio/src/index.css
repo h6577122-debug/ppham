@@ -166,3 +166,121 @@
   z-index: 0;
   pointer-events: none;
 }
+
+/* ── Holographic hero text ── */
+@keyframes holoshimmer {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.holo-text {
+  background: linear-gradient(135deg,
+    #00f0ff 0%, #ffffff 20%, #7c3aed 40%,
+    #f5c518 60%, #ff2d55 80%, #00f0ff 100%);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: holoshimmer 5s ease infinite;
+}
+
+/* ── Orbit system ── */
+@keyframes spin-orbit {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+@keyframes counter-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(-360deg); }
+}
+
+/* ── Phone rock ── */
+@keyframes phone-rock {
+  from { transform: rotate(-2deg); }
+  to   { transform: rotate(2deg); }
+}
+
+/* ── Activity feed scroll ── */
+@keyframes activity-scroll {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
+}
+.activity-feed {
+  animation: activity-scroll 20s linear infinite;
+}
+.activity-feed:hover {
+  animation-play-state: paused;
+}
+
+/* ── Shimmer bar ── */
+@keyframes shimmer {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
+}
+
+/* ── Toast ── */
+@keyframes toast-in {
+  from { transform: translateY(100px); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}
+
+/* ── Circuit trace for AI hex cards ── */
+@keyframes circuit-trace {
+  0%   { stroke-dashoffset: 600; }
+  100% { stroke-dashoffset: 0; }
+}
+
+/* ── Konami aurora surge ── */
+@keyframes aurora-surge {
+  0%   { opacity: 0; }
+  30%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* ── Glitch flicker (coming soon screen) ── */
+@keyframes glitch-flicker {
+  0%, 100% { opacity: 1; }
+  33%       { opacity: 0.5; transform: translateX(2px); }
+  66%       { opacity: 0.8; transform: translateX(-2px); }
+}
+
+/* ── Mobile bottom nav safe area ── */
+.mobile-bottom-nav-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* ── Global micro-interactions ── */
+button, [role="button"] {
+  transition:
+    transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.2s ease,
+    letter-spacing 0.2s ease,
+    color 0.15s ease,
+    opacity 0.15s ease;
+}
+a {
+  transition: color 0.15s ease, letter-spacing 0.2s ease;
+}
+input, textarea, select {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+input:focus, textarea:focus, select:focus {
+  border-color: var(--neon-cyan) !important;
+  box-shadow: 0 0 0 3px rgba(0, 240, 255, 0.15) !important;
+  outline: none;
+}
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--neon-cyan);
+  outline-offset: 3px;
+}
+
+/* Cards */
+.glass-card {
+  transition: transform 0.25s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.25s ease, border-color 0.25s ease, opacity 0.25s ease;
+}
+

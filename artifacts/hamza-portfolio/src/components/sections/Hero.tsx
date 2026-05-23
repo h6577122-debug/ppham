@@ -23,7 +23,7 @@ export function Hero() {
   };
 
   return (
-    <section className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden parallax-layer" data-speed="0.3">
+    <section id="hero" className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden parallax-layer" data-speed="0.3">
       {/* Backgrounds */}
       <div className="mesh-gradient-bg">
         <div className="blob-3"></div>
@@ -39,7 +39,11 @@ export function Hero() {
           </span>
         </div>
 
-        <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-black text-[var(--text-primary)] mb-6 tracking-tight leading-tight">
+        {/* Holographic hero title */}
+        <h1
+          className="font-display font-black mb-6 tracking-tight leading-tight holo-text"
+          style={{ fontSize: 'clamp(2.5rem, 10vw, 7rem)' }}
+        >
           <TypewriterGlitch text="HAMZA POWERPLAYER" />
         </h1>
 
@@ -47,7 +51,9 @@ export function Hero() {
           {subtitles.map((sub, i) => (
             <div
               key={i}
-              className={`absolute inset-0 w-full font-body text-lg md:text-xl text-[var(--text-muted)] transition-all duration-1000 transform ${i === subtitleIndex ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}
+              className={`absolute inset-0 w-full font-body text-lg md:text-xl text-[var(--text-muted)] transition-all duration-1000 transform ${
+                i === subtitleIndex ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
+              }`}
             >
               {sub}
             </div>

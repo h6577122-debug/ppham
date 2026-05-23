@@ -113,8 +113,8 @@ export function TechStack() {
         </ScrollReveal>
 
         {/* Orbit System — Desktop */}
-        <div className="hidden md:flex justify-center mb-20">
-          <div className="relative" style={{ width: 900, height: 900 }}>
+        <div className="hidden md:flex justify-center mb-20 overflow-hidden">
+          <div className="relative" style={{ width: 900, height: 900, transform: 'scale(min(1, calc(100vw / 960px)))', transformOrigin: 'center top' }}>
             {/* Center HP Monogram */}
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-24 h-24 rounded-full flex items-center justify-center"
               style={{

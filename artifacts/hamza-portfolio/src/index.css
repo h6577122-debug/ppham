@@ -245,6 +245,11 @@
   66%       { opacity: 0.8; transform: translateX(-2px); }
 }
 
+/* ── Roadmap scrollbar hide ── */
+.roadmap-scroll::-webkit-scrollbar {
+  display: none;
+}
+
 /* ── Mobile bottom nav safe area ── */
 .mobile-bottom-nav-safe {
   padding-bottom: env(safe-area-inset-bottom, 0px);

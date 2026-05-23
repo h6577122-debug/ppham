@@ -25,13 +25,13 @@ export function AICapabilities() {
           {/* Row 1: 3 hexes */}
           <div className="flex gap-4">
             {HEXES.slice(0, 3).map((hex, i) => (
-              <HexCard key={i} hex={hex} delay={i * 100} />
+              <HexCard key={i} hex={hex} />
             ))}
           </div>
           {/* Row 2: 3 hexes, offset */}
           <div className="flex gap-4" style={{ marginTop: -32 }}>
             {HEXES.slice(3, 6).map((hex, i) => (
-              <HexCard key={i + 3} hex={hex} delay={(i + 3) * 100} />
+              <HexCard key={i + 3} hex={hex} />
             ))}
           </div>
         </div>
@@ -48,7 +48,7 @@ export function AICapabilities() {
   );
 }
 
-function HexCard({ hex, delay }: { hex: typeof HEXES[0]; delay: number }) {
+function HexCard({ hex }: { hex: typeof HEXES[0] }) {
   return (
     <ScrollReveal>
       <div

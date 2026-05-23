@@ -41,10 +41,10 @@ export function Hero() {
 
         {/* Holographic hero title */}
         <h1
-          className="font-display font-black mb-6 tracking-tight leading-tight holo-text"
+          className="font-display font-black mb-6 tracking-tight leading-tight"
           style={{ fontSize: 'clamp(2.5rem, 10vw, 7rem)' }}
         >
-          <TypewriterGlitch text="HAMZA POWERPLAYER" />
+          <TypewriterGlitch text="HAMZA POWERPLAYER" className="holo-text" />
         </h1>
 
         <div className="h-8 mb-12 relative overflow-hidden w-full max-w-lg mx-auto">

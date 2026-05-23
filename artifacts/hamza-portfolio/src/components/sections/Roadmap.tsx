@@ -69,8 +69,8 @@ export function Roadmap() {
         </ScrollReveal>
 
         <div
-          className="flex gap-6 overflow-x-auto pb-8"
-          style={{ scrollSnapType: 'x mandatory', scrollbarWidth: 'none' }}
+          className="flex gap-6 overflow-x-auto pb-8 roadmap-scroll"
+          style={{ scrollSnapType: 'x mandatory', scrollbarWidth: 'none', msOverflowStyle: 'none' }}
         >
           {YEARS.map((y) => {
             const s = STATE_STYLES[y.state];

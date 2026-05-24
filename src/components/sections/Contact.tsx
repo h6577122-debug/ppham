@@ -33,15 +33,37 @@ export function Contact() {
     }
   });
 
-  const onSubmit = async (values: z.infer<typeof formSchema>) => {
+  const onSubmit = (values: z.infer<typeof formSchema>) => {
     setIsSubmitting(true);
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    setIsSubmitting(false);
-    setIsSuccess(true);
-    form.reset();
-    
-    setTimeout(() => setIsSuccess(false), 3000);
+
+    const projectLabels: Record<string, string> = {
+      app: 'App Development',
+      web: 'Web Development',
+      ai: 'AI Integration',
+      other: 'Other',
+    };
+
+    const subject = encodeURIComponent(
+      `[Portfolio] ${projectLabels[values.projectType] ?? values.projectType} inquiry from ${values.name}`
+    );
+
+    const body = encodeURIComponent(
+      `Hi Hamza,\n\n` +
+      `My name is ${values.name} and I found you through your portfolio.\n\n` +
+      `Project Type: ${projectLabels[values.projectType] ?? values.projectType}\n` +
+      `My email: ${values.email}\n\n` +
+      `Message:\n${values.message}\n\n` +
+      `Looking forward to hearing from you!`
+    );
+
+    // Brief spinner for UX, then open mail client
+    setTimeout(() => {
+      window.location.href = `mailto:powerplayer3748@gmail.com?subject=${subject}&body=${body}`;
+      setIsSubmitting(false);
+      setIsSuccess(true);
+      form.reset();
+      setTimeout(() => setIsSuccess(false), 5000);
+    }, 600);
   };
 
   return (
@@ -164,11 +186,24 @@ export function Contact() {
                     {isSubmitting ? (
                       <div className="w-6 h-6 border-2 border-[#04040a] border-t-transparent rounded-full animate-spin" />
                     ) : isSuccess ? (
-                      <span className="text-[#04040a]">MESSAGE SENT!</span>
+                      <span className="text-[#04040a]">✓ EMAIL CLIENT OPENED</span>
                     ) : (
                       "SEND MESSAGE →"
                     )}
                   </MagneticButton>
+
+                  {isSuccess && (
+                    <p className="text-center text-xs font-mono text-[var(--success)] mt-3" style={{ animation: 'fadeIn 0.4s ease' }}>
+                      Your email client opened with the message pre-filled. Hit Send to reach Hamza!
+                    </p>
+                  )}
+
+                  <p className="text-center text-xs font-mono text-[var(--text-muted)] mt-4 opacity-60">
+                    Or reach out directly:{' '}
+                    <a href="mailto:powerplayer3748@gmail.com" className="text-[var(--neon-cyan)] hover:underline">
+                      powerplayer3748@gmail.com
+                    </a>
+                  </p>
                 </form>
               </Form>
             </div>

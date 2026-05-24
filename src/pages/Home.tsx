@@ -8,26 +8,35 @@ import { FloatingLetters } from '@/components/effects/FloatingLetters';
 import { ShockwaveRipple } from '@/components/effects/ShockwaveRipple';
 import { MouseSpotlight } from '@/components/effects/MouseSpotlight';
 import { DNAHelix } from '@/components/effects/DNAHelix';
+import { HackerMode } from '@/components/effects/HackerMode';
+import { HamzaAI } from '@/components/effects/HamzaAI';
+import { VelocityLines } from '@/components/effects/VelocityLines';
 import { Navbar } from '@/components/sections/Navbar';
 import { Hero } from '@/components/sections/Hero';
 import { InfinityTicker } from '@/components/sections/InfinityTicker';
 import { WarRoom } from '@/components/sections/WarRoom';
 import { About } from '@/components/sections/About';
-import { Skills } from '@/components/sections/Skills';
+import { SolarSystem } from '@/components/sections/SolarSystem';
+import { TheForge } from '@/components/sections/TheForge';
 import { GravityRoom } from '@/components/sections/GravityRoom';
 import { TechStack } from '@/components/sections/TechStack';
 import { Projects } from '@/components/sections/Projects';
 import { AppShowcase } from '@/components/sections/AppShowcase';
+import { NeuralNetwork } from '@/components/sections/NeuralNetwork';
 import { AICapabilities } from '@/components/sections/AICapabilities';
 import { Timeline } from '@/components/sections/Timeline';
+import { TheSignal } from '@/components/sections/TheSignal';
 import { Roadmap } from '@/components/sections/Roadmap';
 import { Achievements } from '@/components/sections/Achievements';
 import { LiveActivity } from '@/components/sections/LiveActivity';
 import { Philosophy } from '@/components/sections/Philosophy';
+import { WallOfFire } from '@/components/sections/WallOfFire';
 import { Console } from '@/components/sections/Console';
 import { Testimonials } from '@/components/sections/Testimonials';
+import { Multiverse } from '@/components/sections/Multiverse';
 import { Mirror } from '@/components/sections/Mirror';
 import { Contact } from '@/components/sections/Contact';
+import { TheVault } from '@/components/sections/TheVault';
 import { Footer } from '@/components/sections/Footer';
 import { KonamiEasterEgg } from '@/components/sections/KonamiEasterEgg';
 import { MobileBottomNav } from '@/components/sections/MobileBottomNav';
@@ -56,7 +65,7 @@ export default function Home() {
       <LoadingScreen />
       <CustomCursor />
       <ToastNotifications />
-      <KonamiEasterEgg onActivate={() => {}} />
+      <KonamiEasterEgg onActivate={() => { sessionStorage.setItem('konami-done', 'true'); window.dispatchEvent(new Event('konami-activated')); }} />
       <MobileBottomNav />
       <ScreensaverMode />
       <AirplaneBanner />
@@ -64,6 +73,9 @@ export default function Home() {
       <ShockwaveRipple />
       <MouseSpotlight />
       <DNAHelix />
+      <HackerMode />
+      <HamzaAI />
+      <VelocityLines />
 
       <Navbar />
 
@@ -78,53 +90,71 @@ export default function Home() {
         <WarRoom />
 
         <div className="bg-[var(--bg-base)]">
-          {/* 4. About (with Spinning Globe) */}
+          {/* 4. About */}
           <About />
 
-          {/* 5. Skills */}
-          <Skills />
+          {/* 5. Skills — Solar System */}
+          <SolarSystem />
 
-          {/* 6. Gravity Room */}
+          {/* 6. The Forge */}
+          <TheForge />
+
+          {/* 7. Gravity Room */}
           <GravityRoom />
 
-          {/* 7. Tech Stack Universe */}
+          {/* 8. Tech Stack Universe */}
           <TechStack />
 
-          {/* 8. Projects */}
+          {/* 9. Projects */}
           <Projects />
 
-          {/* 9. App Showcase */}
+          {/* 10. App Showcase */}
           <AppShowcase />
 
-          {/* 10. AI Capabilities */}
+          {/* 11. Neural Network */}
+          <NeuralNetwork />
+
+          {/* 12. AI Capabilities */}
           <AICapabilities />
 
-          {/* 11. Developer Timeline */}
+          {/* 13. Developer Timeline */}
           <Timeline />
 
-          {/* 12. Vision 2030 Roadmap */}
+          {/* 14. The Signal */}
+          <TheSignal />
+
+          {/* 15. Vision 2030 Roadmap */}
           <Roadmap />
 
-          {/* 13. Achievements */}
+          {/* 16. Achievements */}
           <Achievements />
 
-          {/* 14. Live Activity */}
+          {/* 17. Live Activity */}
           <LiveActivity />
 
-          {/* 15. Philosophy */}
+          {/* 18. Philosophy */}
           <Philosophy />
 
-          {/* 16. Developer Console */}
+          {/* 19. Wall of Fire */}
+          <WallOfFire />
+
+          {/* 20. Developer Console */}
           <Console />
 
-          {/* 17. Testimonials */}
+          {/* 21. Testimonials */}
           <Testimonials />
 
-          {/* 18. Mirror — Cursor Spotlight */}
+          {/* 22. Multiverse */}
+          <Multiverse />
+
+          {/* 23. Mirror */}
           <Mirror />
 
-          {/* 19. Contact */}
+          {/* 24. Contact */}
           <Contact />
+
+          {/* 25. The Vault */}
+          <TheVault />
         </div>
       </main>
 

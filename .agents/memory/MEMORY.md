@@ -1,0 +1,2 @@
+- [Node.js + pnpm version fix](nodejs-pnpm-setup.md) — pnpm 11 requires Node.js v22+; install nodejs-22 module when pnpm fails with node:sqlite error.
+- [pnpm catalog setup](pnpm-catalog-setup.md) — standalone package using catalog: needs a pnpm-workspace.yaml at root with catalog: section + onlyBuiltDependencies for esbuild.

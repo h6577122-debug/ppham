@@ -1,6 +1,10 @@
-modules = ["nodejs-20"]
+modules = ["nodejs-22"]
 [nix]
 packages = ["nano"]
 
 [agent]
 expertMode = true
+
+[[ports]]
+localPort = 19728
+externalPort = 80

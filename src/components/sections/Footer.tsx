@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { SiGithub, SiX, SiInstagram, SiYoutube } from 'react-icons/si';
 import { Linkedin } from 'lucide-react';
+import { WaveformBorder } from '@/components/effects/WaveformBorder';
 
 const NAV_ECHO = ['About', 'Skills', 'Projects', 'Tech', 'AI', 'Vision', 'Console', 'Contact'];
 
@@ -12,14 +13,13 @@ export function Footer() {
     setSecretUnlocked(localStorage.getItem('konami') === 'true');
   }, []);
 
-  // Proximity-based opacity for background text
   useEffect(() => {
     const footer = document.querySelector('footer');
     if (!footer) return;
     const handler = () => {
       const rect = footer.getBoundingClientRect();
       const proximity = Math.max(0, Math.min(1, 1 - rect.top / window.innerHeight));
-      setBgOpacity(proximity * 0.05);
+      setBgOpacity(proximity * 0.07);
     };
     window.addEventListener('scroll', handler, { passive: true });
     return () => window.removeEventListener('scroll', handler);
@@ -30,13 +30,18 @@ export function Footer() {
   };
 
   return (
-    <footer className="relative bg-[var(--bg-surface)] min-h-[400px] border-t border-[var(--border-glow)] overflow-hidden flex flex-col justify-end py-16">
+    <footer className="relative bg-[var(--bg-surface)] min-h-[400px] border-t border-[var(--border-glow)] overflow-hidden flex flex-col justify-end pb-16">
+      {/* Waveform at top (flipped) */}
+      <div className="w-full">
+        <WaveformBorder flip />
+      </div>
+
       {/* Aurora bleed */}
       <div className="absolute top-0 left-0 right-0 h-32 pointer-events-none"
         style={{ background: 'radial-gradient(ellipse at 50% 0%, rgba(0,240,255,0.06) 0%, transparent 70%)' }}
       />
 
-      {/* Giant background text */}
+      {/* Giant background text — -webkit-text-stroke outlined */}
       <div
         aria-hidden="true"
         className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden"
@@ -44,13 +49,19 @@ export function Footer() {
       >
         <span
           className="font-display font-black whitespace-nowrap"
-          style={{ fontSize: '8vw', opacity: bgOpacity, letterSpacing: '0.1em', color: 'var(--text-primary)' }}
+          style={{
+            fontSize: '8vw',
+            opacity: bgOpacity,
+            letterSpacing: '0.1em',
+            color: 'transparent',
+            WebkitTextStroke: '1px rgba(0,240,255,0.15)',
+          }}
         >
           HAMZA POWERPLAYER
         </span>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 w-full flex flex-col items-center relative z-10">
+      <div className="max-w-7xl mx-auto px-6 w-full flex flex-col items-center relative z-10 pt-12">
         {/* Logo + tagline */}
         <div
           className="w-16 h-16 rounded-full flex items-center justify-center mb-6"

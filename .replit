@@ -1,0 +1,6 @@
+modules = ["nodejs-20"]
+[nix]
+packages = ["nano"]
+
+[agent]
+expertMode = true

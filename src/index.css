@@ -351,15 +351,46 @@ a {
 input, textarea, select {
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
   font-family: 'IBM Plex Mono', monospace;
+  background-color: rgba(255,255,255,0.02);
+  color: var(--text-primary);
+  -webkit-text-fill-color: var(--text-primary);
 }
 input::placeholder, textarea::placeholder {
   font-style: italic;
   font-family: 'IBM Plex Mono', monospace;
+  color: rgba(255,255,255,0.22);
+  -webkit-text-fill-color: rgba(255,255,255,0.22);
+}
+/* Force dark background on select dropdowns across all browsers */
+select {
+  background-color: #0a0a1a !important;
+  color: var(--text-primary) !important;
+  -webkit-text-fill-color: var(--text-primary) !important;
+}
+select option {
+  background-color: #0a0a1a;
+  color: var(--text-primary);
 }
 input:focus, textarea:focus, select:focus {
   border-color: var(--neon-cyan) !important;
   box-shadow: 0 0 0 3px rgba(0, 240, 255, 0.15) !important;
   outline: none;
+}
+
+/* Page section heading underline accent */
+.section-heading {
+  display: inline-block;
+  position: relative;
+}
+.section-heading::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 40px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--neon-cyan), transparent);
+  border-radius: 2px;
 }
 button:focus-visible,
 a:focus-visible,

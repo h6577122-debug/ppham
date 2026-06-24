@@ -37,6 +37,13 @@ import { Multiverse } from '@/components/sections/Multiverse';
 import { Mirror } from '@/components/sections/Mirror';
 import { Contact } from '@/components/sections/Contact';
 import { TheVault } from '@/components/sections/TheVault';
+import { TrophyRoom } from '@/components/sections/TrophyRoom';
+import { ControlRoom } from '@/components/sections/ControlRoom';
+import { CommissionRoom } from '@/components/sections/CommissionRoom';
+import { InteractiveResume } from '@/components/sections/InteractiveResume';
+import { TestimonialsV2 } from '@/components/sections/TestimonialsV2';
+import { CommunityHub } from '@/components/sections/CommunityHub';
+import { PakistanRising } from '@/components/sections/PakistanRising';
 import { Footer } from '@/components/sections/Footer';
 import { KonamiEasterEgg } from '@/components/sections/KonamiEasterEgg';
 import { MobileBottomNav } from '@/components/sections/MobileBottomNav';
@@ -44,24 +51,13 @@ import { ScreensaverMode } from '@/components/sections/ScreensaverMode';
 
 export default function Home() {
   useEffect(() => {
-    const handleScroll = () => {
-      const scrolled = window.scrollY;
-      const layers = document.querySelectorAll('.parallax-layer');
-      layers.forEach(layer => {
-        const speed = parseFloat((layer as HTMLElement).dataset.speed || '0');
-        const yPos = -(scrolled * speed);
-        (layer as HTMLElement).style.transform = `translate3d(0, ${yPos}px, 0)`;
-      });
-    };
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+    document.title = 'HAMZA POWERPLAYER — App Developer & AI Builder';
   }, []);
 
   return (
-    <div className="bg-[var(--bg-base)] min-h-screen text-[var(--text-primary)] overflow-x-hidden selection:bg-[var(--neon-cyan)] selection:text-[#04040a]">
-      {/* Global fixed effects */}
+    <div className="relative min-h-screen" style={{ background: 'var(--bg-base)' }}>
       <AuroraEngine />
-      <div className="noise-overlay" />
+
       <LoadingScreen />
       <CustomCursor />
       <ToastNotifications />
@@ -141,7 +137,7 @@ export default function Home() {
           {/* 20. Developer Console */}
           <Console />
 
-          {/* 21. Testimonials */}
+          {/* 21. Testimonials (original) */}
           <Testimonials />
 
           {/* 22. Multiverse */}
@@ -155,6 +151,29 @@ export default function Home() {
 
           {/* 25. The Vault */}
           <TheVault />
+
+          {/* ── PART 6 NEW SECTIONS ── */}
+
+          {/* N. Trophy Room — All 12 apps */}
+          <TrophyRoom />
+
+          {/* O. Control Room — Live dashboard */}
+          <ControlRoom />
+
+          {/* P. Commission Room — Pricing & hire me */}
+          <CommissionRoom />
+
+          {/* Q. Interactive Resume */}
+          <InteractiveResume />
+
+          {/* R. Testimonials v2.0 — Card flip gallery */}
+          <TestimonialsV2 />
+
+          {/* S. Community Hub — Radar + platforms */}
+          <CommunityHub />
+
+          {/* T. Pakistan Tech Rising — Manifesto */}
+          <PakistanRising />
         </div>
       </main>
 

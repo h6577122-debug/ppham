@@ -108,7 +108,7 @@ export default function ContactPage() {
                 <SiWhatsapp size={16} style={{ color: '#25d366' }} />
                 <span className="font-display text-xs tracking-widest" style={{ color: '#25d366' }}>WHATSAPP</span>
               </div>
-              <a href="https://wa.me/923001234567" target="_blank" rel="noopener noreferrer"
+              <a href="https://wa.me/923129584661" target="_blank" rel="noopener noreferrer"
                 className="block w-full text-center py-2 rounded-xl font-display text-xs font-bold text-[#04040a] tracking-widest transition-all hover:brightness-110"
                 style={{ background: '#25d366' }}>
                 Message on WhatsApp

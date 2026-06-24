@@ -579,3 +579,28 @@ select:focus-visible {
   initial-value: 0deg;
 }
 
+
+/* ── Part 6: Revenue Ticker + Bubbles + Cursor ── */
+@keyframes ticker-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes bubble-float {
+  0%   { opacity: 0; transform: translateY(0px); }
+  15%  { opacity: 1; }
+  80%  { opacity: 1; transform: translateY(-60px); }
+  100% { opacity: 0; transform: translateY(-80px); }
+}
+
+@keyframes cursor-blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+/* Print styles for CV download */
+@media print {
+  body > *:not(main) { display: none !important; }
+  #resume { display: block !important; }
+  .glass-card { background: white !important; color: black !important; border: 1px solid #ccc !important; }
+}

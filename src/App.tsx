@@ -1,5 +1,8 @@
 import { Switch, Route, Router as WouterRouter } from "wouter";
 import { CookieConsent } from "@/components/effects/CookieConsent";
+import { RevenueTicker } from "@/components/effects/RevenueTicker";
+import { SocialProofBubbles } from "@/components/effects/SocialProofBubbles";
+import { CVDownloadFAB } from "@/components/effects/CVDownloadFAB";
 import Home from "@/pages/Home";
 import AboutPage from "@/pages/AboutPage";
 import PrivacyPage from "@/pages/PrivacyPage";
@@ -41,6 +44,9 @@ function Router() {
 function App() {
   return (
     <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
+      <RevenueTicker />
+      <SocialProofBubbles />
+      <CVDownloadFAB />
       <Router />
       <CookieConsent />
     </WouterRouter>

@@ -1,7 +1,4 @@
 import { Switch, Route, Router as WouterRouter } from "wouter";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { Toaster } from "@/components/ui/toaster";
-import { TooltipProvider } from "@/components/ui/tooltip";
 import { CookieConsent } from "@/components/effects/CookieConsent";
 import Home from "@/pages/Home";
 import AboutPage from "@/pages/AboutPage";
@@ -18,8 +15,6 @@ import DisclaimerPage from "@/pages/DisclaimerPage";
 import SitemapPage from "@/pages/SitemapPage";
 import NotFoundPage from "@/pages/NotFoundPage";
 import ComingSoonPage from "@/pages/ComingSoonPage";
-
-const queryClient = new QueryClient();
 
 function Router() {
   return (
@@ -45,15 +40,10 @@ function Router() {
 
 function App() {
   return (
-    <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
-          <Router />
-          <CookieConsent />
-        </WouterRouter>
-        <Toaster />
-      </TooltipProvider>
-    </QueryClientProvider>
+    <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
+      <Router />
+      <CookieConsent />
+    </WouterRouter>
   );
 }
 

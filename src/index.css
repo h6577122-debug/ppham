@@ -507,6 +507,40 @@ select:focus-visible {
   100% { transform: perspective(800px) rotateY(-80deg); opacity: 0.3; }
 }
 
+/* ── Page hero slide-down entry ── */
+@keyframes slideDown {
+  from { transform: translateY(-20px); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}
+
+/* ── 404 glitch ── */
+@keyframes glitch-404 {
+  0%, 90%, 100% {
+    text-shadow: 4px 0 rgba(0,240,255,0.5), -4px 0 rgba(124,58,237,0.5);
+    transform: none;
+  }
+  92% {
+    text-shadow: -6px 0 rgba(0,240,255,0.8), 6px 0 rgba(255,45,85,0.8);
+    transform: skewX(-4deg);
+  }
+  94% {
+    text-shadow: 8px 0 rgba(124,58,237,0.8), -8px 0 rgba(0,240,255,0.8);
+    transform: skewX(3deg);
+  }
+  96% {
+    text-shadow: -4px 0 rgba(255,45,85,0.8), 4px 0 rgba(0,240,255,0.5);
+    transform: skewX(-2deg);
+  }
+}
+
+/* ── Print styles for legal pages ── */
+@media print {
+  .noise-overlay, nav, footer, button { display: none !important; }
+  body { background: white !important; color: black !important; }
+  .glass-card { border: 1px solid #ccc !important; background: white !important; }
+  a { color: #000 !important; }
+}
+
 /* ── Solar system label ── */
 @property --angle {
   syntax: '<angle>';

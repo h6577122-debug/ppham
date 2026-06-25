@@ -23,8 +23,7 @@ const RESPONSES: [string[], string][] = [
     "Best ways to reach Hamza: WhatsApp (fastest) → wa.me/923129584661, or email → powerplayer3748@gmail.com. He responds within 6 hours. 📩"],
   [['pakistan','pakistani'],
     "Proudly building from Pakistan 🇵🇰 — reaching users in 50+ countries. Check the 'Pakistan Tech Rising' section below for the full manifesto. Geography is not destiny!"],
-  [['urdu','اردو'],
-    "Did you know the site has a full Urdu version? Toggle it in the nav — look for the [EN | اردو] pill button! 🌐"],
+
   [['ai','artificial intelligence','gpt','llm','machine learning','claude','gemini'],
     "AI is Hamza's second language. He builds with GPT-4, Claude, Gemini, and custom fine-tuned models. From chatbots to autonomous agents — he's shipped them all. The future is AI. He's already there. 🤖"],
   [['secret','konami','easter egg','hidden','hack'],

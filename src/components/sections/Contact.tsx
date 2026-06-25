@@ -58,7 +58,7 @@ export function Contact() {
 
     // Brief spinner for UX, then open mail client
     setTimeout(() => {
-      window.location.href = `mailto:powerplayer3748@gmail.com?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:hamzapowerplayer.global@gmail.com?subject=${subject}&body=${body}`;
       setIsSubmitting(false);
       setIsSuccess(true);
       form.reset();
@@ -85,7 +85,7 @@ export function Contact() {
                 <div className="w-10 h-10 rounded-full bg-[rgba(255,255,255,0.03)] border border-[var(--border-glow)] flex items-center justify-center text-[var(--neon-cyan)]">
                   <Mail size={18} />
                 </div>
-                <span className="font-accent">powerplayer3748@gmail.com</span>
+                <span className="font-accent">hamzapowerplayer.global@gmail.com</span>
               </div>
               <div className="flex items-center gap-4 text-[var(--text-muted)]">
                 <div className="w-10 h-10 rounded-full bg-[rgba(255,255,255,0.03)] border border-[var(--border-glow)] flex items-center justify-center text-[var(--neon-cyan)]">
@@ -103,7 +103,7 @@ export function Contact() {
 
             <div className="flex gap-4">
               {[
-                { Icon: SiGithub, href: 'https://github.com/HAMZAPP99', label: 'GitHub' },
+                { Icon: SiGithub, href: 'https://github.com/HAMZAPOWERPLAYER', label: 'GitHub' },
                 { Icon: Linkedin, href: 'https://linkedin.com/in/hamzapowerplayer', label: 'LinkedIn' },
                 { Icon: SiX, href: 'https://x.com/hamzapowerplayer', label: 'X' },
                 { Icon: SiInstagram, href: 'https://instagram.com/hamzapowerplayer', label: 'Instagram' },
@@ -206,8 +206,8 @@ export function Contact() {
 
                   <p className="text-center text-xs font-mono text-[var(--text-muted)] mt-4 opacity-60">
                     Or reach out directly:{' '}
-                    <a href="mailto:powerplayer3748@gmail.com" className="text-[var(--neon-cyan)] hover:underline">
-                      powerplayer3748@gmail.com
+                    <a href="mailto:hamzapowerplayer.global@gmail.com" className="text-[var(--neon-cyan)] hover:underline">
+                      hamzapowerplayer.global@gmail.com
                     </a>
                   </p>
                 </form>

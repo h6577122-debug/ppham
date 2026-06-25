@@ -38,7 +38,7 @@ function PakistanClock() {
 function CopyEmail() {
   const [copied, setCopied] = useState(false);
   return (
-    <button onClick={() => { navigator.clipboard.writeText('powerplayer3748@gmail.com'); setCopied(true); setTimeout(() => setCopied(false), 2000); }}
+    <button onClick={() => { navigator.clipboard.writeText('hamzapowerplayer.global@gmail.com'); setCopied(true); setTimeout(() => setCopied(false), 2000); }}
       className="flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono transition-all"
       style={{ background: copied ? 'rgba(0,255,136,0.15)' : 'rgba(0,240,255,0.08)', color: copied ? 'var(--success)' : 'var(--neon-cyan)', border: `1px solid ${copied ? 'rgba(0,255,136,0.3)' : 'rgba(0,240,255,0.2)'}` }}>
       {copied ? <Check size={12} /> : <Copy size={12} />}
@@ -61,7 +61,7 @@ export default function ContactPage() {
       `Hi Hamza,\n\nName: ${data.name}\nEmail: ${data.email}\nProject: ${typeMap[data.projectType] ?? data.projectType}\n${data.budget ? `Budget: ${data.budget}\n` : ''}${data.timeline ? `Timeline: ${data.timeline}\n` : ''}${data.source ? `Found via: ${data.source}\n` : ''}\nMessage:\n${data.message}`
     );
     setTimeout(() => {
-      window.location.href = `mailto:powerplayer3748@gmail.com?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:hamzapowerplayer.global@gmail.com?subject=${subject}&body=${body}`;
       setSubmitting(false);
       setSuccess(true);
       reset();
@@ -97,7 +97,7 @@ export default function ContactPage() {
                 <Mail size={16} className="text-[var(--neon-cyan)]" />
                 <span className="font-display text-xs text-[var(--neon-cyan)] tracking-widest">EMAIL</span>
               </div>
-              <p className="font-mono text-xs text-[var(--text-primary)] mb-2">powerplayer3748@gmail.com</p>
+              <p className="font-mono text-xs text-[var(--text-primary)] mb-2">hamzapowerplayer.global@gmail.com</p>
               <CopyEmail />
               <p className="font-accent text-xs text-[var(--text-muted)] mt-2">Best for: Project inquiries, collabs</p>
             </div>
@@ -131,7 +131,7 @@ export default function ContactPage() {
               <div className="font-display text-xs text-[var(--neon-cyan)] tracking-widest mb-3">SOCIAL</div>
               <div className="flex flex-wrap gap-3">
                 {[
-                  { Icon: SiGithub, href: 'https://github.com/HAMZAPP99', label: 'GitHub' },
+                  { Icon: SiGithub, href: 'https://github.com/HAMZAPOWERPLAYER', label: 'GitHub' },
                   { Icon: Linkedin, href: 'https://linkedin.com/in/hamzapowerplayer', label: 'LinkedIn' },
                   { Icon: SiX, href: 'https://x.com/hamzapowerplayer', label: 'X' },
                   { Icon: SiInstagram, href: 'https://instagram.com/hamzapowerplayer', label: 'Instagram' },

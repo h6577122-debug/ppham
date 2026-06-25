@@ -33,12 +33,12 @@ const PLATFORMS = [
   },
   {
     icon: '⌥',
-    name: '@HAMZAPP99',
+    name: '@HAMZAPOWERPLAYER',
     platform: 'GitHub',
     stat: 'Open-source tools',
     desc: 'Follow the code. Fork it. Build with it.',
     cta: 'FOLLOW ↗',
-    href: 'https://github.com/HAMZAPP99',
+    href: 'https://github.com/HAMZAPOWERPLAYER',
     color: 'rgba(240,240,255,0.8)',
   },
   {

@@ -104,7 +104,7 @@ export function Footer() {
             {/* Social icons */}
             <div className="flex gap-3">
               {[
-                { Icon: SiGithub, href: 'https://github.com/HAMZAPP99', label: 'GitHub' },
+                { Icon: SiGithub, href: 'https://github.com/HAMZAPOWERPLAYER', label: 'GitHub' },
                 { Icon: Linkedin, href: 'https://linkedin.com/in/hamzapowerplayer', label: 'LinkedIn' },
                 { Icon: SiX, href: 'https://x.com/hamzapowerplayer', label: 'X' },
                 { Icon: SiInstagram, href: 'https://instagram.com/hamzapowerplayer', label: 'Instagram' },

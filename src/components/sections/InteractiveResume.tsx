@@ -135,7 +135,7 @@ export function InteractiveResume() {
             <div className="grid grid-cols-2 gap-2 font-mono text-xs text-[var(--text-muted)]">
               <span>📍 Pakistan</span>
               <span>🌐 hamzapowerplayer.dev</span>
-              <span>✉ powerplayer3748@gmail.com</span>
+              <span>✉ hamzapowerplayer.global@gmail.com</span>
               <span>📞 wa.me/923129584661</span>
             </div>
           </div>

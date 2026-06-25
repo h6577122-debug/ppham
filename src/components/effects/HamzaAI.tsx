@@ -20,7 +20,7 @@ const RESPONSES: [string[], string][] = [
   [['app','apps','portfolio','ship','built','work'],
     "Hamza has shipped 12 apps on Google Play — Subsight, Link Analyzer Pro, AppShield, Privacy Policy Gen, and 8 more. All solo. All in production. Check the Trophy Room section to see them all! 🏆"],
   [['contact','reach','message','talk','email'],
-    "Best ways to reach Hamza: WhatsApp (fastest) → wa.me/923129584661, or email → powerplayer3748@gmail.com. He responds within 6 hours. 📩"],
+    "Best ways to reach Hamza: WhatsApp (fastest) → wa.me/923129584661, or email → hamzapowerplayer.global@gmail.com. He responds within 6 hours. 📩"],
   [['pakistan','pakistani'],
     "Proudly building from Pakistan 🇵🇰 — reaching users in 50+ countries. Check the 'Pakistan Tech Rising' section below for the full manifesto. Geography is not destiny!"],
 
@@ -33,7 +33,7 @@ const RESPONSES: [string[], string][] = [
   [['cv','resume','download'],
     "You can download Hamza's CV using the ⬇ CV button at the bottom-left of the screen, or scroll to the Interactive Resume section! It prints beautifully too."],
   [['community','discord','youtube','telegram','follow'],
-    "Join the community! YouTube (2,400+ subs), Telegram group, GitHub (@HAMZAPP99), LinkedIn, Patreon. Check the Community Hub section for all links! 🌐"],
+    "Join the community! YouTube (2,400+ subs), Telegram group, GitHub (@HAMZAPOWERPLAYER), LinkedIn, Patreon. Check the Community Hub section for all links! 🌐"],
 ];
 
 function getResponse(input: string): string {

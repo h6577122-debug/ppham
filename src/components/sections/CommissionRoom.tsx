@@ -155,7 +155,7 @@ export function CommissionRoom() {
               <div key={p.num} className="glass-card rounded-xl p-4 text-center hover:border-[rgba(0,240,255,0.25)] transition-all">
                 <div className="font-display font-black text-3xl mb-2" style={{ color: 'var(--neon-cyan)' }}>{p.num}</div>
                 <div className="font-mono text-[10px] tracking-widest text-[var(--neon-cyan)] mb-2">{p.label}</div>
-                <div className="font-body text-[11px] text-[var(--text-muted)]">{p.desc}</div>
+                <div className="font-accent text-[11px] text-[var(--text-muted)]">{p.desc}</div>
               </div>
             ))}
           </div>
@@ -166,7 +166,7 @@ export function CommissionRoom() {
           <div className="font-display font-black text-lg text-white mb-2">
             "If you're not satisfied with the final build — I fix it. Free."
           </div>
-          <div className="font-body text-sm text-[var(--text-muted)] mb-1">
+          <div className="font-accent text-sm text-[var(--text-muted)] mb-1">
             I've never left a project unfinished. That record stays intact.
           </div>
           <div className="font-mono text-xs" style={{ color: '#f5c518' }}>— Hamza, HAMZA POWERPLAYER</div>

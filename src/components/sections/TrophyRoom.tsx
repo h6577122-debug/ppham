@@ -170,7 +170,7 @@ export function TrophyRoom() {
               {/* Info */}
               <div className="text-center">
                 <div className="font-display font-black text-sm text-[var(--text-primary)] mb-1">{app.name}</div>
-                <div className="font-body text-xs text-[var(--text-muted)]">{app.tagline}</div>
+                <div className="font-accent text-xs text-[var(--text-muted)]">{app.tagline}</div>
               </div>
 
               {/* Badges */}

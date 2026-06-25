@@ -113,7 +113,7 @@ export function Roadmap() {
                           className="w-1.5 h-1.5 rounded-full mt-1.5 shrink-0"
                           style={{ background: s.yearColor, boxShadow: `0 0 6px ${s.yearColor}` }}
                         />
-                        <span className="font-body text-xs text-[var(--text-muted)] leading-relaxed">{goal}</span>
+                        <span className="font-accent text-xs text-[var(--text-muted)] leading-relaxed">{goal}</span>
                       </li>
                     ))}
                   </ul>

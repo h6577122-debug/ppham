@@ -71,7 +71,7 @@ export function Timeline() {
                   <div className={`ml-16 md:ml-0 md:w-1/2 ${isEven ? 'md:pl-12' : 'md:pr-12 md:text-right'}`}>
                     <div className="glass-card p-6 rounded-xl hover:border-[var(--neon-cyan)] transition-colors duration-300 group">
                       <h3 className="font-display text-xl font-bold text-[var(--text-primary)] mb-2 group-hover:text-[var(--neon-cyan)] transition-colors tracking-wide">◉ {node.title}</h3>
-                      <p className="font-body text-[var(--text-muted)] leading-relaxed">{node.desc}</p>
+                      <p className="font-accent text-[var(--text-muted)] leading-relaxed">{node.desc}</p>
                     </div>
                   </div>
                 </ScrollReveal>

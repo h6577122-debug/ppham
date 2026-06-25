@@ -76,7 +76,7 @@ export function LiveActivity() {
                     >
                       <span className="font-body text-xs text-[var(--text-muted)] mt-0.5 shrink-0 w-12">{item.time}</span>
                       <span className="text-sm shrink-0">{item.icon}</span>
-                      <span className="font-body text-xs text-[var(--text-primary)] leading-relaxed">{item.text}</span>
+                      <span className="font-accent text-xs text-[var(--text-primary)] leading-relaxed">{item.text}</span>
                     </div>
                   ))}
                 </div>
@@ -126,7 +126,7 @@ export function LiveActivity() {
               <div className="font-display text-xl font-bold">
                 <LiveCounter />
               </div>
-              <div className="font-body text-xs text-[var(--text-muted)] mt-1">uninterrupted dev streak</div>
+              <div className="font-accent text-xs text-[var(--text-muted)] mt-1">uninterrupted dev streak</div>
             </div>
           </div>
         </div>

@@ -71,7 +71,7 @@ export function Testimonials() {
                   "
                 </div>
                 <div className="relative z-10 pt-10 flex flex-col gap-4 h-full">
-                  <p className="font-body text-sm text-[var(--text-primary)] leading-relaxed italic flex-1">"{t.quote}"</p>
+                  <p className="font-accent text-sm text-[var(--text-primary)] leading-relaxed italic flex-1">"{t.quote}"</p>
                   <div className="border-t border-[var(--border-glow)] pt-4">
                     <div className="font-accent font-bold text-sm text-[var(--text-primary)]">{t.name}</div>
                     <div className="font-body text-xs text-[var(--text-muted)] mt-1">{t.role}</div>

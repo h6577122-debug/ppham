@@ -25,7 +25,7 @@ export function Skills() {
               <TiltCard key={i} className="p-8 group">
                 <div className="text-4xl mb-6">{skill.icon}</div>
                 <h3 className="font-display text-xl font-bold text-[var(--text-primary)] mb-3 group-hover:text-[var(--neon-cyan)] transition-colors">{skill.title}</h3>
-                <p className="font-body text-sm text-[var(--text-muted)] mb-8 h-10">{skill.desc}</p>
+                <p className="font-accent text-sm text-[var(--text-muted)] mb-8 h-10">{skill.desc}</p>
                 
                 <div className="w-full h-1 bg-[rgba(255,255,255,0.05)] rounded-full overflow-hidden">
                   <div 

@@ -24,11 +24,11 @@ export function About() {
             <h2 className="font-display text-4xl md:text-5xl font-bold text-[var(--text-primary)] leading-tight">
               <span className="text-[var(--gold)]" style={{ fontSize: '120%' }}>Y</span>oung Developer.<br />Big Vision.
             </h2>
-            <p className="font-body text-lg text-[var(--text-muted)] leading-relaxed">
+            <p className="font-accent text-lg text-[var(--text-muted)] leading-relaxed">
               I'm Hamza — a Pakistani developer obsessed with building things that matter. From powerful mobile apps to intelligent AI tools, I create digital experiences that push the limits of what's possible. Every line of code I write is a step toward the future I'm building.
             </p>
             <div className="p-4 border-l-2 border-[var(--neon-cyan)] bg-[rgba(0,240,255,0.05)] mt-4">
-              <span className="font-body text-[var(--neon-cyan)] font-medium">2+ Years Building | 8+ Apps Shipped | ∞ Ideas Pending</span>
+              <span className="font-accent text-[var(--neon-cyan)] font-semibold">2+ Years Building | 8+ Apps Shipped | ∞ Ideas Pending</span>
             </div>
           </ScrollReveal>
 

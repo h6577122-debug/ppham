@@ -62,7 +62,7 @@ export function Philosophy() {
                   "
                 </div>
                 <h3 className="font-display font-bold text-lg text-[var(--text-primary)] tracking-wider">{card.title}</h3>
-                <p className="font-body text-sm text-[var(--text-muted)] leading-relaxed flex-1">{card.body}</p>
+                <p className="font-accent text-sm text-[var(--text-muted)] leading-relaxed flex-1">{card.body}</p>
               </div>
             </ScrollReveal>
           ))}

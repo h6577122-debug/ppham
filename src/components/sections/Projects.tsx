@@ -69,7 +69,7 @@ export function Projects() {
                     {proj.title}
                   </h3>
                   
-                  <p className="font-body text-[var(--text-muted)] mb-8 flex-grow leading-relaxed">
+                  <p className="font-accent text-[var(--text-muted)] mb-8 flex-grow leading-relaxed">
                     {proj.desc}
                   </p>
 

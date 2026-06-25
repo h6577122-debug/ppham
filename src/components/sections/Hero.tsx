@@ -185,7 +185,7 @@ export function Hero() {
             {subtitles.map((sub, i) => (
               <div
                 key={i}
-                className={`absolute inset-0 w-full font-body text-lg md:text-xl text-[var(--text-muted)] transition-all duration-1000 transform ${
+                className={`absolute inset-0 w-full font-accent text-lg md:text-xl text-[var(--text-muted)] transition-all duration-1000 transform ${
                   i === subtitleIndex ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
                 }`}
               >

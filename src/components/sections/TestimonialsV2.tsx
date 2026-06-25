@@ -51,7 +51,7 @@ function FlipCard({ t, index, visible }: { t: typeof TESTIMONIALS[0]; index: num
         {/* Back (face up) */}
         <div className="absolute inset-0 rounded-2xl p-5 flex flex-col justify-between"
           style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)', background: 'rgba(8,8,26,0.96)', border: '1px solid rgba(0,240,255,0.15)' }}>
-          <p className="font-body text-sm text-[var(--text-primary)] leading-relaxed italic">"{t.text}"</p>
+          <p className="font-accent text-sm text-[var(--text-primary)] leading-relaxed italic">"{t.text}"</p>
           <div>
             <div className="flex items-center gap-2">
               <span className="text-sm">{t.flag}</span>

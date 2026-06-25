@@ -196,7 +196,7 @@ export function CommunityHub() {
                 </div>
               </div>
               <div className="font-body text-xs font-bold" style={{ color: p.color }}>{p.stat}</div>
-              <div className="font-body text-sm text-[var(--text-muted)] flex-1">{p.desc}</div>
+              <div className="font-accent text-sm text-[var(--text-muted)] flex-1">{p.desc}</div>
               <a href={p.href} target="_blank" rel="noopener noreferrer"
                 className="block w-full py-2.5 rounded-xl font-mono text-[11px] text-center font-bold tracking-wider transition-all duration-200 hover:scale-105"
                 style={{ border: `1px solid ${p.color}44`, color: p.color, background: `${p.color}08` }}>

@@ -69,7 +69,7 @@ export default function SitemapPage() {
             <Link key={p.href} href={p.href}
               className="glass-card rounded-xl p-4 text-center hover:border-[rgba(0,240,255,0.2)] transition-all group opacity-75 hover:opacity-100">
               <div className="text-2xl mb-2">{p.icon}</div>
-              <div className="font-body text-xs text-[var(--text-muted)] group-hover:text-[var(--neon-cyan)] transition-colors">{p.label}</div>
+              <div className="font-accent text-xs text-[var(--text-muted)] group-hover:text-[var(--neon-cyan)] transition-colors">{p.label}</div>
             </Link>
           ))}
         </div>

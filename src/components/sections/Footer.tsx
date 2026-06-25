@@ -54,13 +54,13 @@ export function Footer() {
       const id = href.slice(2);
       return (
         <button onClick={() => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })}
-          className="block font-body text-xs text-[var(--text-muted)] hover:text-[var(--neon-cyan)] transition-colors text-left">
+          className="block font-accent text-xs text-[var(--text-muted)] hover:text-[var(--neon-cyan)] transition-colors text-left">
           {label}
         </button>
       );
     }
     return (
-      <Link href={href} className="block font-body text-xs text-[var(--text-muted)] hover:text-[var(--neon-cyan)] transition-colors">
+      <Link href={href} className="block font-accent text-xs text-[var(--text-muted)] hover:text-[var(--neon-cyan)] transition-colors">
         {label}
       </Link>
     );
@@ -97,18 +97,18 @@ export function Footer() {
               </div>
               <span className="font-display font-bold tracking-widest text-sm text-[var(--text-primary)]">HAMZA POWERPLAYER</span>
             </div>
-            <p className="font-body text-xs text-[var(--text-muted)] leading-relaxed mb-4">
+            <p className="font-accent text-xs text-[var(--text-muted)] leading-relaxed mb-4">
               Building the future, one app at a time.
             </p>
-            <p className="font-body text-xs text-[var(--text-muted)] mb-5">Pakistan 🇵🇰</p>
+            <p className="font-accent text-xs text-[var(--text-muted)] mb-5">Pakistan 🇵🇰</p>
             {/* Social icons */}
             <div className="flex gap-3">
               {[
-                { Icon: SiGithub, href: 'https://github.com', label: 'GitHub' },
-                { Icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-                { Icon: SiX, href: 'https://x.com', label: 'X' },
-                { Icon: SiInstagram, href: 'https://instagram.com', label: 'Instagram' },
-                { Icon: SiYoutube, href: 'https://youtube.com', label: 'YouTube' },
+                { Icon: SiGithub, href: 'https://github.com/HAMZAPP99', label: 'GitHub' },
+                { Icon: Linkedin, href: 'https://linkedin.com/in/hamzapowerplayer', label: 'LinkedIn' },
+                { Icon: SiX, href: 'https://x.com/hamzapowerplayer', label: 'X' },
+                { Icon: SiInstagram, href: 'https://instagram.com/hamzapowerplayer', label: 'Instagram' },
+                { Icon: SiYoutube, href: 'https://youtube.com/@hamzapowerplayer', label: 'YouTube' },
               ].map(({ Icon, href, label }) => (
                 <a key={label} href={href} target="_blank" rel="noopener noreferrer" aria-label={label}
                   className="w-8 h-8 glass-card rounded-full flex items-center justify-center text-[var(--text-muted)] hover:text-[var(--neon-cyan)] transition-all"
@@ -151,10 +151,10 @@ export function Footer() {
 
         {/* Bottom row */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-3">
-          <p className="font-body text-xs text-[var(--text-muted)] opacity-60">
+          <p className="font-accent text-xs text-[var(--text-muted)] opacity-60">
             © 2026 HAMZA POWERPLAYER. All Rights Reserved.
           </p>
-          <p className="font-body text-xs text-[var(--text-muted)] opacity-60">
+          <p className="font-accent text-xs text-[var(--text-muted)] opacity-60">
             Made with obsession in Pakistan 🇵🇰
           </p>
         </div>

@@ -53,7 +53,7 @@ export default function HirePage() {
             <div className="w-3 h-3 rounded-full bg-[var(--success)]" style={{ animation: 'ai-pulse 1.5s ease infinite' }} />
             <span className="font-display font-black text-sm text-[var(--success)] tracking-widest">CURRENTLY AVAILABLE</span>
           </div>
-          <p className="font-body text-sm text-[var(--text-muted)]">Taking on new projects — response within 24 hours</p>
+          <p className="font-accent text-sm text-[var(--text-muted)]">Taking on new projects — response within 24 hours</p>
         </div>
 
         {/* Services */}
@@ -96,7 +96,7 @@ export default function HirePage() {
                 <div className="font-display font-black text-4xl opacity-10 absolute top-4 right-4">{step.step}</div>
                 <div className="font-mono text-xs text-[var(--neon-cyan)] mb-1">{step.sub}</div>
                 <div className="font-display font-black text-sm text-[var(--text-primary)] mb-2">{step.title}</div>
-                <p className="font-body text-xs text-[var(--text-muted)] leading-relaxed">{step.text}</p>
+                <p className="font-accent text-xs text-[var(--text-muted)] leading-relaxed">{step.text}</p>
                 {i < STEPS.length - 1 && (
                   <div className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 text-[var(--neon-cyan)] text-lg z-10">›</div>
                 )}
@@ -113,7 +113,7 @@ export default function HirePage() {
               <div key={w.title} className="glass-card rounded-2xl p-6 text-center">
                 <div className="text-4xl mb-3">{w.icon}</div>
                 <div className="font-display font-black text-sm text-[var(--neon-cyan)] tracking-widest mb-2">{w.title}</div>
-                <p className="font-body text-sm text-[var(--text-muted)] italic">"{w.text}"</p>
+                <p className="font-accent text-sm text-[var(--text-muted)] italic">"{w.text}"</p>
               </div>
             ))}
           </div>
@@ -122,7 +122,7 @@ export default function HirePage() {
         {/* CTA */}
         <div className="glass-card rounded-3xl p-10 text-center">
           <h2 className="font-display font-black text-3xl text-[var(--text-primary)] mb-3">Ready to start building?</h2>
-          <p className="font-body text-[var(--text-muted)] mb-8">Let's turn your idea into reality.</p>
+          <p className="font-accent text-[var(--text-muted)] mb-8">Let's turn your idea into reality.</p>
           <Link href="/contact"
             className="inline-block px-10 py-4 rounded-2xl font-display font-black text-[#04040a] text-lg tracking-widest transition-all hover:brightness-110 hover:scale-105"
             style={{ background: 'linear-gradient(90deg, var(--neon-cyan), var(--neon-violet))', boxShadow: '0 0 40px rgba(0,240,255,0.3)' }}>

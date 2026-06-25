@@ -77,7 +77,7 @@ export default function ComingSoonPage() {
           style={{ fontSize: 'clamp(2rem, 8vw, 4rem)' }}>
           SOMETHING BIG<br />IS COMING
         </h1>
-        <p className="font-body text-[var(--text-muted)] text-lg mb-12">Get ready. This is going to be something special.</p>
+        <p className="font-accent text-[var(--text-muted)] text-lg mb-12">Get ready. This is going to be something special.</p>
 
         {/* Countdown */}
         <div className="flex justify-center mb-14">
@@ -87,13 +87,13 @@ export default function ComingSoonPage() {
         {/* Email form */}
         <div className="glass-card rounded-2xl p-6 max-w-md mx-auto">
           <h3 className="font-display font-black text-sm text-[var(--text-primary)] mb-1">Be the first to know</h3>
-          <p className="font-body text-xs text-[var(--text-muted)] mb-4">Get notified the moment it drops.</p>
+          <p className="font-accent text-xs text-[var(--text-muted)] mb-4">Get notified the moment it drops.</p>
           {notified ? (
             <p className="font-mono text-sm text-[var(--success)]">✓ You're on the list!</p>
           ) : (
             <form onSubmit={e => { e.preventDefault(); if (email) setNotified(true); }} className="flex gap-2">
               <input type="email" required value={email} onChange={e => setEmail(e.target.value)} placeholder="your@email.com"
-                className="flex-1 bg-[rgba(255,255,255,0.03)] border border-[rgba(0,240,255,0.12)] rounded-xl px-4 py-2.5 font-body text-sm text-[var(--text-primary)] focus:outline-none focus:border-[var(--neon-cyan)] placeholder:text-[rgba(255,255,255,0.2)]" />
+                className="flex-1 bg-[rgba(255,255,255,0.03)] border border-[rgba(0,240,255,0.12)] rounded-xl px-4 py-2.5 font-accent text-sm text-[var(--text-primary)] focus:outline-none focus:border-[var(--neon-cyan)] placeholder:text-[rgba(255,255,255,0.2)]" />
               <button type="submit" className="px-4 py-2.5 rounded-xl font-display text-xs font-black text-[#04040a] tracking-widest"
                 style={{ background: 'linear-gradient(90deg, var(--neon-cyan), var(--neon-violet))' }}>
                 NOTIFY ME

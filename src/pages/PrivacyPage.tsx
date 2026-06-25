@@ -32,7 +32,7 @@ export default function PrivacyPage() {
               <nav className="space-y-1">
                 {SECTIONS.map(s => (
                   <a key={s.id} href={`#${s.id}`}
-                    className="block font-body text-xs text-[var(--text-muted)] hover:text-[var(--neon-cyan)] transition-colors py-1 pl-2 border-l border-transparent hover:border-[var(--neon-cyan)]">
+                    className="block font-accent text-xs text-[var(--text-muted)] hover:text-[var(--neon-cyan)] transition-colors py-1 pl-2 border-l border-transparent hover:border-[var(--neon-cyan)]">
                     {s.label}
                   </a>
                 ))}
@@ -41,7 +41,7 @@ export default function PrivacyPage() {
           </aside>
 
           {/* Content */}
-          <div className="flex-1 space-y-10 font-body text-[rgba(240,240,255,0.85)] leading-[1.8]">
+          <div className="flex-1 space-y-10 font-accent text-[rgba(240,240,255,0.85)] leading-[1.8]">
 
             <div id="intro" className="glass-card rounded-2xl p-6" style={{ borderLeft: '3px solid var(--neon-cyan)' }}>
               <h2 className="font-display font-black text-xl text-[var(--neon-cyan)] mb-3">1. Introduction</h2>
@@ -139,7 +139,7 @@ export default function PrivacyPage() {
                   <div key={right} className="flex items-center gap-3 glass-card rounded-lg px-4 py-3">
                     <span>{icon}</span>
                     <span className="font-display text-xs text-[var(--neon-cyan)] w-36">{right}</span>
-                    <span className="font-body text-sm text-[var(--text-muted)]">{desc}</span>
+                    <span className="font-accent text-sm text-[var(--text-muted)]">{desc}</span>
                   </div>
                 ))}
               </div>

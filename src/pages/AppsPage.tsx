@@ -98,7 +98,7 @@ export default function AppsPage() {
                   </div>
                 )}
 
-                <p className="font-body text-sm text-[var(--text-muted)] leading-relaxed mb-4">{app.desc}</p>
+                <p className="font-accent text-sm text-[var(--text-muted)] leading-relaxed mb-4">{app.desc}</p>
 
                 {/* Progress bar for dev apps */}
                 {app.status === 'DEV' && app.progress && (
@@ -145,7 +145,7 @@ export default function AppsPage() {
           <div className="rounded-2xl p-8 flex flex-col items-center justify-center text-center" style={{ border: '2px dashed rgba(0,240,255,0.2)', background: 'rgba(0,240,255,0.02)' }}>
             <div className="text-4xl mb-4">💡</div>
             <h3 className="font-display font-black text-xl text-[var(--text-primary)] mb-2">Your Next App?</h3>
-            <p className="font-body text-sm text-[var(--text-muted)] mb-5">Have an idea? I can build it.</p>
+            <p className="font-accent text-sm text-[var(--text-muted)] mb-5">Have an idea? I can build it.</p>
             <Link href="/hire" className="px-6 py-3 rounded-xl font-display text-sm font-black text-[#04040a] tracking-widest transition-all hover:brightness-110"
               style={{ background: 'linear-gradient(90deg, var(--neon-cyan), var(--neon-violet))' }}>
               Hire Me →

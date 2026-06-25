@@ -85,25 +85,31 @@ export function Contact() {
                 <div className="w-10 h-10 rounded-full bg-[rgba(255,255,255,0.03)] border border-[var(--border-glow)] flex items-center justify-center text-[var(--neon-cyan)]">
                   <Mail size={18} />
                 </div>
-                <span className="font-body">powerplayer3748@gmail.com</span>
+                <span className="font-accent">powerplayer3748@gmail.com</span>
               </div>
               <div className="flex items-center gap-4 text-[var(--text-muted)]">
                 <div className="w-10 h-10 rounded-full bg-[rgba(255,255,255,0.03)] border border-[var(--border-glow)] flex items-center justify-center text-[var(--neon-cyan)]">
                   <MapPin size={18} />
                 </div>
-                <span className="font-body">Pakistan</span>
+                <span className="font-accent">Pakistan</span>
               </div>
               <div className="flex items-center gap-4 text-[var(--text-muted)]">
                 <div className="w-10 h-10 rounded-full bg-[rgba(255,255,255,0.03)] border border-[var(--border-glow)] flex items-center justify-center text-[var(--neon-cyan)]">
                   <Globe size={18} />
                 </div>
-                <span className="font-body">Available Worldwide</span>
+                <span className="font-accent">Available Worldwide</span>
               </div>
             </div>
 
             <div className="flex gap-4">
-              {[SiGithub, Linkedin, SiX, SiInstagram].map((Icon, i) => (
-                <a key={i} href="#" className="w-12 h-12 rounded-full glass-card flex items-center justify-center text-[var(--text-primary)] hover:text-[var(--neon-cyan)] hover:border-[var(--neon-cyan)] hover:shadow-[0_0_15px_rgba(0,240,255,0.4)] transition-all interactive">
+              {[
+                { Icon: SiGithub, href: 'https://github.com/HAMZAPP99', label: 'GitHub' },
+                { Icon: Linkedin, href: 'https://linkedin.com/in/hamzapowerplayer', label: 'LinkedIn' },
+                { Icon: SiX, href: 'https://x.com/hamzapowerplayer', label: 'X' },
+                { Icon: SiInstagram, href: 'https://instagram.com/hamzapowerplayer', label: 'Instagram' },
+              ].map(({ Icon, href, label }) => (
+                <a key={label} href={href} target="_blank" rel="noopener noreferrer" aria-label={label}
+                  className="w-12 h-12 rounded-full glass-card flex items-center justify-center text-[var(--text-primary)] hover:text-[var(--neon-cyan)] hover:border-[var(--neon-cyan)] hover:shadow-[0_0_15px_rgba(0,240,255,0.4)] transition-all interactive">
                   <Icon size={20} />
                 </a>
               ))}

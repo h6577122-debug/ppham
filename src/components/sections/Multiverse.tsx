@@ -129,7 +129,7 @@ export function Multiverse() {
         </div>
 
         <ScrollReveal>
-          <p className="text-center text-[var(--text-muted)] font-body mt-8 italic">
+          <p className="text-center text-[var(--text-muted)] font-accent mt-8 italic">
             All three exist. Only one website can hold them all.
           </p>
         </ScrollReveal>

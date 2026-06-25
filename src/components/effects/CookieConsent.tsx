@@ -26,7 +26,7 @@ export function CookieConsent() {
       style={{ animation: 'slide-up 0.4s ease' }}>
       <div className="max-w-4xl mx-auto rounded-2xl px-6 py-4 flex flex-col sm:flex-row items-start sm:items-center gap-4 justify-between"
         style={{ background: 'rgba(8,8,26,0.97)', border: '1px solid rgba(0,240,255,0.2)', backdropFilter: 'blur(20px)', boxShadow: '0 -4px 40px rgba(0,0,0,0.4)' }}>
-        <p className="font-body text-sm text-[var(--text-muted)] flex-1">
+        <p className="font-accent text-sm text-[var(--text-muted)] flex-1">
           🍪 I use minimal cookies to improve your experience. No tracking. No ads. Just essentials.{' '}
           <Link href="/cookies" className="text-[var(--neon-cyan)] hover:underline">Learn More</Link>
         </p>

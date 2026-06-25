@@ -193,7 +193,7 @@ export function TheForge() {
           >
             {running ? '⚒ FORGING...' : '[ FORGE A SKILL ]'}
           </button>
-          <p className="text-[var(--text-muted)] font-body text-sm italic">
+          <p className="text-[var(--text-muted)] font-accent text-sm italic">
             This is what learning looks like from the inside.
           </p>
         </div>

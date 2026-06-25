@@ -134,7 +134,7 @@ export function Mirror() {
         <h2 className="font-display text-4xl md:text-5xl font-bold text-[var(--text-primary)] mb-8">
           <span className="text-[var(--gold)]" style={{ fontSize: '120%' }}>Y</span>ou're In The Right Place
         </h2>
-        <p className="font-body text-xl text-[var(--text-muted)] max-w-lg mb-3 leading-relaxed">
+        <p className="font-accent text-xl text-[var(--text-muted)] max-w-lg mb-3 leading-relaxed">
           If you're here, you already know what you want.
         </p>
         <p className="font-display text-2xl font-bold text-[var(--text-primary)] mb-12">
@@ -143,7 +143,7 @@ export function Mirror() {
         <MagneticButton onClick={handleScrollToContact}>
           LET'S TALK →
         </MagneticButton>
-        <p className="font-body text-xs text-[var(--text-muted)] mt-6 opacity-50">
+        <p className="font-accent text-xs text-[var(--text-muted)] mt-6 opacity-50">
           Move your cursor to reveal ↑
         </p>
       </div>

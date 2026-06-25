@@ -46,7 +46,7 @@ export default function BlogPage() {
                 <span className="font-mono text-xs text-[var(--text-muted)]">{featured.date}</span>
               </div>
               <h2 className="font-display font-black text-2xl text-[var(--text-primary)] mb-3">{featured.title}</h2>
-              <p className="font-body text-sm text-[var(--text-muted)] leading-relaxed mb-4">{featured.excerpt}</p>
+              <p className="font-accent text-sm text-[var(--text-muted)] leading-relaxed mb-4">{featured.excerpt}</p>
               <button className="px-5 py-2 rounded-xl font-display text-xs font-black text-[#04040a] tracking-widest transition-all hover:brightness-110"
                 style={{ background: 'linear-gradient(90deg, var(--neon-cyan), var(--neon-violet))' }}>
                 Read Article →
@@ -79,7 +79,7 @@ export default function BlogPage() {
                   <span className="font-mono text-[10px] text-[var(--text-muted)]">{post.read}</span>
                 </div>
                 <h3 className="font-display font-black text-sm text-[var(--text-primary)] mb-2 leading-snug">{post.title}</h3>
-                <p className="font-body text-xs text-[var(--text-muted)] leading-relaxed flex-1 line-clamp-2 mb-3">{post.excerpt}</p>
+                <p className="font-accent text-xs text-[var(--text-muted)] leading-relaxed flex-1 line-clamp-2 mb-3">{post.excerpt}</p>
                 <div className="flex items-center justify-between mt-auto">
                   <div className="flex items-center gap-2">
                     <div className="w-6 h-6 rounded-full flex items-center justify-center font-display font-black text-[10px] text-[var(--neon-cyan)]"
@@ -97,13 +97,13 @@ export default function BlogPage() {
         <div className="glass-card rounded-2xl p-8 text-center max-w-xl mx-auto">
           <div className="text-3xl mb-3">📬</div>
           <h3 className="font-display font-black text-xl text-[var(--text-primary)] mb-1">GET THE LATEST ARTICLES</h3>
-          <p className="font-body text-sm text-[var(--text-muted)] mb-5">New posts every week. No spam. Unsubscribe anytime.</p>
+          <p className="font-accent text-sm text-[var(--text-muted)] mb-5">New posts every week. No spam. Unsubscribe anytime.</p>
           {subscribed ? (
             <p className="font-mono text-sm text-[var(--success)]">✓ You're subscribed! Check your inbox.</p>
           ) : (
             <form onSubmit={e => { e.preventDefault(); if (email) setSubscribed(true); }} className="flex gap-3">
               <input type="email" value={email} onChange={e => setEmail(e.target.value)} required placeholder="your@email.com"
-                className="flex-1 bg-[rgba(255,255,255,0.03)] border border-[rgba(0,240,255,0.12)] rounded-xl px-4 py-3 font-body text-sm text-[var(--text-primary)] focus:outline-none focus:border-[var(--neon-cyan)] placeholder:text-[rgba(255,255,255,0.2)]" />
+                className="flex-1 bg-[rgba(255,255,255,0.03)] border border-[rgba(0,240,255,0.12)] rounded-xl px-4 py-3 font-accent text-sm text-[var(--text-primary)] focus:outline-none focus:border-[var(--neon-cyan)] placeholder:text-[rgba(255,255,255,0.2)]" />
               <button type="submit" className="px-5 py-3 rounded-xl font-display text-xs font-black text-[#04040a] tracking-widest whitespace-nowrap"
                 style={{ background: 'linear-gradient(90deg, var(--neon-cyan), var(--neon-violet))' }}>
                 SUBSCRIBE

@@ -52,7 +52,7 @@ export function TheVault() {
         </ScrollReveal>
 
         <ScrollReveal>
-          <p className="text-[var(--text-muted)] font-body mb-12 max-w-lg mx-auto">
+          <p className="text-[var(--text-muted)] font-accent mb-12 max-w-lg mx-auto">
             Some projects are too early to show.<br />
             Some ideas are too powerful to reveal.<br />
             When the time is right — this door opens.
@@ -151,7 +151,7 @@ export function TheVault() {
             <div className="font-mono text-xs text-[var(--danger)] mb-4 tracking-widest">⚠ CLASSIFIED — DEV EYES ONLY</div>
             <div className="font-display font-black text-2xl text-[var(--neon-cyan)] mb-2">PROJECT INFINITY</div>
             <div className="font-mono text-xs text-[var(--text-muted)] mb-6">STATUS: INITIALIZING...</div>
-            <p className="text-[var(--text-muted)] font-body mb-6 max-w-md mx-auto">
+            <p className="text-[var(--text-muted)] font-accent mb-6 max-w-md mx-auto">
               An AI platform that will change how developers build.
               Coming when it's ready. Not before.
             </p>

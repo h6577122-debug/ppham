@@ -18,7 +18,7 @@ export default function CookiesPage() {
     <PageLayout title="Cookie Policy" description="What cookies HAMZA POWERPLAYER uses and why.">
       <PageHero label="LEGAL" title="Cookie Policy" subtitle="What cookies we use and why" />
 
-      <div className="max-w-3xl mx-auto px-6 py-12 space-y-10 font-body text-[rgba(240,240,255,0.85)] leading-[1.8]">
+      <div className="max-w-3xl mx-auto px-6 py-12 space-y-10 font-accent text-[rgba(240,240,255,0.85)] leading-[1.8]">
         <div className="flex justify-end">
           <div className="glass-card px-4 py-2 rounded-full font-mono text-xs text-[var(--text-muted)]">Last Updated: June 2026</div>
         </div>
@@ -80,7 +80,7 @@ export default function CookiesPage() {
             {['Chrome', 'Firefox', 'Safari', 'Edge'].map(b => (
               <div key={b} className="glass-card rounded-xl px-4 py-3 text-center">
                 <div className="font-display font-black text-xs text-[var(--neon-cyan)] mb-1">{b}</div>
-                <div className="font-body text-[10px] text-[var(--text-muted)]">Settings → Privacy → Cookies</div>
+                <div className="font-accent text-[10px] text-[var(--text-muted)]">Settings → Privacy → Cookies</div>
               </div>
             ))}
           </div>

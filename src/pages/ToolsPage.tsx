@@ -39,7 +39,7 @@ export default function ToolsPage() {
               )}
               <div className="text-4xl mb-3">{tool.icon}</div>
               <h3 className="font-display font-black text-sm text-[var(--text-primary)] mb-2">{tool.name}</h3>
-              <p className="font-body text-xs text-[var(--text-muted)] leading-relaxed flex-1 mb-4">{tool.desc}</p>
+              <p className="font-accent text-xs text-[var(--text-muted)] leading-relaxed flex-1 mb-4">{tool.desc}</p>
               <div className="flex flex-wrap gap-1.5 mb-4">
                 {tool.tags.map(t => (
                   <span key={t} className="font-mono text-[10px] px-2 py-0.5 rounded" style={{ background: 'rgba(0,240,255,0.06)', color: 'var(--neon-cyan)', border: '1px solid rgba(0,240,255,0.15)' }}>{t}</span>

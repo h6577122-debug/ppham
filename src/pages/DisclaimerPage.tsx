@@ -46,7 +46,7 @@ export default function DisclaimerPage() {
                 <span className="text-2xl">{s.icon}</span>
                 <h2 className="font-display font-black text-lg text-[var(--text-primary)]">{s.title}</h2>
               </div>
-              <p className="font-body text-sm text-[var(--text-muted)] leading-[1.8]">{s.text}</p>
+              <p className="font-accent text-sm text-[var(--text-muted)] leading-[1.8]">{s.text}</p>
             </div>
           ))}
         </div>

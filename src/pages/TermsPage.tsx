@@ -14,8 +14,8 @@ export default function TermsPage() {
         {/* Quick Summary */}
         <div className="rounded-2xl p-6 mb-10" style={{ border: '2px solid rgba(245,197,24,0.3)', background: 'rgba(245,197,24,0.05)' }}>
           <div className="font-display font-black text-sm text-[var(--gold)] tracking-widest mb-1">QUICK SUMMARY</div>
-          <p className="font-body text-xs text-[var(--text-muted)] mb-4">Most people don't read Terms. Here's the SHORT VERSION:</p>
-          <ul className="space-y-2 font-body text-sm">
+          <p className="font-accent text-xs text-[var(--text-muted)] mb-4">Most people don't read Terms. Here's the SHORT VERSION:</p>
+          <ul className="space-y-2 font-accent text-sm">
             {['Use my apps and website fairly', "Don't steal my code or brand", "Don't use my tools for harmful purposes", "I build with care but can't guarantee perfection", "Contact me if anything is wrong — I'll fix it"].map(i => (
               <li key={i} className="flex gap-2" style={{ color: 'var(--gold)' }}><span>✓</span><span>{i}</span></li>
             ))}
@@ -23,7 +23,7 @@ export default function TermsPage() {
           <p className="font-mono text-xs text-[var(--text-muted)] mt-4">[ Read Full Terms Below ↓ ]</p>
         </div>
 
-        <div className="space-y-8 font-body text-[rgba(240,240,255,0.85)] leading-[1.8]">
+        <div className="space-y-8 font-accent text-[rgba(240,240,255,0.85)] leading-[1.8]">
           {[
             {
               num: '1', title: 'Acceptance of Terms',

@@ -136,7 +136,7 @@ export default function AboutPage() {
               ].map(([k, v]) => (
                 <div key={k} className="flex gap-3 items-start">
                   <span className="font-mono text-[11px] text-[var(--neon-cyan)] w-24 shrink-0 pt-0.5 tracking-wider">{k}:</span>
-                  <span className="font-body text-sm text-[var(--text-primary)] leading-relaxed">{v}</span>
+                  <span className="font-accent text-sm text-[var(--text-primary)] leading-relaxed">{v}</span>
                 </div>
               ))}
               <div className="flex items-center gap-3 pt-2">
@@ -157,7 +157,7 @@ export default function AboutPage() {
             How It Started
           </h2>
           <div className="w-16 h-[2px] mb-8 rounded-full" style={{ background: 'linear-gradient(90deg, var(--neon-cyan), transparent)' }} />
-          <div className="space-y-5 font-body text-[rgba(240,240,255,0.82)] leading-[1.85] text-[16px]">
+          <div className="space-y-5 font-accent text-[rgba(240,240,255,0.82)] leading-[1.85] text-[16px]">
             <p>I started coding young — no mentors, no bootcamps, no CS degree. Just curiosity, a laptop, and an internet connection. I taught myself everything from tutorials, documentation, and endless trial and error.</p>
             <div className="pl-6 border-l-4 border-[var(--neon-cyan)] my-8 py-3 rounded-r-lg"
               style={{ background: 'rgba(0,240,255,0.04)' }}>
@@ -182,7 +182,7 @@ export default function AboutPage() {
               <div key={v.title} className="glass-card rounded-2xl p-6 hover:border-[rgba(0,240,255,0.3)] transition-all group">
                 <div className="text-5xl mb-4">{v.icon}</div>
                 <div className="font-display font-black text-xs text-[var(--neon-cyan)] tracking-[0.15em] mb-3">{v.title}</div>
-                <p className="font-body text-sm text-[var(--text-muted)] leading-relaxed group-hover:text-[var(--text-primary)] transition-colors">{v.text}</p>
+                <p className="font-accent text-sm text-[var(--text-muted)] leading-relaxed group-hover:text-[var(--text-primary)] transition-colors">{v.text}</p>
               </div>
             ))}
           </div>
@@ -207,7 +207,7 @@ export default function AboutPage() {
           <div className="w-16 h-[2px] mb-8 rounded-full" style={{ background: 'linear-gradient(90deg, var(--neon-cyan), transparent)' }} />
           <div className="grid md:grid-cols-2 gap-4">
             {FACTS.map((f, i) => (
-              <div key={i} className="glass-card rounded-xl p-4 font-body text-sm text-[var(--text-muted)] hover:text-[var(--text-primary)] hover:border-[rgba(0,240,255,0.25)] transition-all cursor-default">
+              <div key={i} className="glass-card rounded-xl p-4 font-accent text-sm text-[var(--text-muted)] hover:text-[var(--text-primary)] hover:border-[rgba(0,240,255,0.25)] transition-all cursor-default">
                 {f}
               </div>
             ))}

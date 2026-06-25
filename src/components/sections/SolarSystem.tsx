@@ -263,7 +263,7 @@ export function SolarSystem() {
           <h2 className="font-display font-black text-4xl md:text-5xl mb-4">
             <span className="holo-text">Skill Solar System</span>
           </h2>
-          <p className="text-[var(--text-muted)] font-body max-w-xl">
+          <p className="text-[var(--text-muted)] font-accent max-w-xl">
             Every skill orbits at its own velocity. Hover a planet to explore.
           </p>
         </ScrollReveal>

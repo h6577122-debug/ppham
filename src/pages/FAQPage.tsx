@@ -39,7 +39,7 @@ function AccordionItem({ q, a }: { q: string; a: string }) {
         <span className="shrink-0 text-[var(--neon-cyan)]">{open ? <X size={16} /> : <Plus size={16} />}</span>
       </button>
       <div style={{ maxHeight: open ? 400 : 0, overflow: 'hidden', transition: 'max-height 0.3s ease' }}>
-        <p className="px-5 pb-4 font-body text-sm text-[var(--text-muted)] leading-relaxed">{a}</p>
+        <p className="px-5 pb-4 font-accent text-sm text-[var(--text-muted)] leading-relaxed">{a}</p>
       </div>
     </div>
   );
@@ -64,7 +64,7 @@ export default function FAQPage() {
         <div className="relative mb-8">
           <span className="absolute left-4 top-1/2 -translate-y-1/2 text-[var(--text-muted)] text-sm">🔍</span>
           <input value={search} onChange={e => setSearch(e.target.value)} placeholder="Search questions..."
-            className="w-full bg-[rgba(255,255,255,0.03)] border border-[rgba(0,240,255,0.12)] rounded-xl pl-10 pr-4 py-3 font-body text-sm text-[var(--text-primary)] focus:outline-none focus:border-[var(--neon-cyan)] placeholder:text-[rgba(255,255,255,0.25)]" />
+            className="w-full bg-[rgba(255,255,255,0.03)] border border-[rgba(0,240,255,0.12)] rounded-xl pl-10 pr-4 py-3 font-accent text-sm text-[var(--text-primary)] focus:outline-none focus:border-[var(--neon-cyan)] placeholder:text-[rgba(255,255,255,0.25)]" />
         </div>
 
         {/* Category tabs */}
@@ -84,13 +84,13 @@ export default function FAQPage() {
         <div className="space-y-3 mb-12">
           {filtered.length > 0
             ? filtered.map(f => <AccordionItem key={f.q} q={f.q} a={f.a} />)
-            : <p className="text-center font-body text-sm text-[var(--text-muted)] py-8">No matching questions found.</p>}
+            : <p className="text-center font-accent text-sm text-[var(--text-muted)] py-8">No matching questions found.</p>}
         </div>
 
         {/* Still have questions */}
         <div className="glass-card rounded-2xl p-8 text-center">
           <h3 className="font-display font-black text-xl text-[var(--text-primary)] mb-2">Didn't find your answer?</h3>
-          <p className="font-body text-sm text-[var(--text-muted)] mb-5">Ask me directly — I reply to everything.</p>
+          <p className="font-accent text-sm text-[var(--text-muted)] mb-5">Ask me directly — I reply to everything.</p>
           <Link href="/contact" className="inline-block px-6 py-3 rounded-xl font-display text-sm font-black text-[#04040a] tracking-widest transition-all hover:brightness-110"
             style={{ background: 'linear-gradient(90deg, var(--neon-cyan), var(--neon-violet))' }}>
             Ask Me Directly →

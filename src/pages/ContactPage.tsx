@@ -69,7 +69,7 @@ export default function ContactPage() {
     }, 700);
   };
 
-  const inputCls = 'w-full bg-[rgba(255,255,255,0.02)] border border-[rgba(0,240,255,0.12)] rounded-xl px-4 py-3 font-body text-sm text-[var(--text-primary)] focus:outline-none focus:border-[var(--neon-cyan)] transition-colors placeholder:text-[rgba(255,255,255,0.2)]';
+  const inputCls = 'w-full bg-[rgba(255,255,255,0.02)] border border-[rgba(0,240,255,0.12)] rounded-xl px-4 py-3 font-accent text-sm text-[var(--text-primary)] focus:outline-none focus:border-[var(--neon-cyan)] transition-colors placeholder:text-[rgba(255,255,255,0.2)]';
   const selectCls = `${inputCls} cursor-pointer`;
 
   return (
@@ -87,7 +87,7 @@ export default function ContactPage() {
                 <div className="w-3 h-3 rounded-full bg-[var(--success)]" style={{ animation: 'ai-pulse 1.5s ease infinite' }} />
                 <span className="font-display font-black text-sm text-[var(--success)] tracking-widest">AVAILABLE FOR PROJECTS</span>
               </div>
-              <p className="font-body text-xs text-[var(--text-muted)] mb-3">Response time: usually within 24 hours</p>
+              <p className="font-accent text-xs text-[var(--text-muted)] mb-3">Response time: usually within 24 hours</p>
               <PakistanClock />
             </div>
 
@@ -99,7 +99,7 @@ export default function ContactPage() {
               </div>
               <p className="font-mono text-xs text-[var(--text-primary)] mb-2">powerplayer3748@gmail.com</p>
               <CopyEmail />
-              <p className="font-body text-xs text-[var(--text-muted)] mt-2">Best for: Project inquiries, collabs</p>
+              <p className="font-accent text-xs text-[var(--text-muted)] mt-2">Best for: Project inquiries, collabs</p>
             </div>
 
             {/* WhatsApp */}
@@ -113,7 +113,7 @@ export default function ContactPage() {
                 style={{ background: '#25d366' }}>
                 Message on WhatsApp
               </a>
-              <p className="font-body text-xs text-[var(--text-muted)] mt-2">Best for: Quick questions</p>
+              <p className="font-accent text-xs text-[var(--text-muted)] mt-2">Best for: Quick questions</p>
             </div>
 
             {/* Location */}
@@ -122,16 +122,23 @@ export default function ContactPage() {
                 <MapPin size={16} className="text-[var(--neon-cyan)]" />
                 <span className="font-display text-xs text-[var(--neon-cyan)] tracking-widest">LOCATION</span>
               </div>
-              <p className="font-body text-sm text-[var(--text-primary)]">Lahore, Pakistan 🇵🇰</p>
-              <p className="font-body text-xs text-[var(--text-muted)] mt-1">Available for remote work worldwide</p>
+              <p className="font-accent text-sm text-[var(--text-primary)]">Lahore, Pakistan 🇵🇰</p>
+              <p className="font-accent text-xs text-[var(--text-muted)] mt-1">Available for remote work worldwide</p>
             </div>
 
             {/* Socials */}
             <div className="glass-card rounded-2xl p-5">
               <div className="font-display text-xs text-[var(--neon-cyan)] tracking-widest mb-3">SOCIAL</div>
               <div className="flex flex-wrap gap-3">
-                {[SiGithub, Linkedin, SiX, SiInstagram, SiYoutube].map((Icon, i) => (
-                  <a key={i} href="#" className="w-9 h-9 glass-card rounded-full flex items-center justify-center text-[var(--text-muted)] hover:text-[var(--neon-cyan)] transition-all">
+                {[
+                  { Icon: SiGithub, href: 'https://github.com/HAMZAPP99', label: 'GitHub' },
+                  { Icon: Linkedin, href: 'https://linkedin.com/in/hamzapowerplayer', label: 'LinkedIn' },
+                  { Icon: SiX, href: 'https://x.com/hamzapowerplayer', label: 'X' },
+                  { Icon: SiInstagram, href: 'https://instagram.com/hamzapowerplayer', label: 'Instagram' },
+                  { Icon: SiYoutube, href: 'https://youtube.com/@hamzapowerplayer', label: 'YouTube' },
+                ].map(({ Icon, href, label }) => (
+                  <a key={label} href={href} target="_blank" rel="noopener noreferrer" aria-label={label}
+                    className="w-9 h-9 glass-card rounded-full flex items-center justify-center text-[var(--text-muted)] hover:text-[var(--neon-cyan)] transition-all">
                     <Icon size={16} />
                   </a>
                 ))}
@@ -141,7 +148,7 @@ export default function ContactPage() {
             {/* What to include */}
             <div className="glass-card rounded-2xl p-5">
               <div className="font-display text-xs text-[var(--gold)] tracking-widest mb-3">WHAT TO INCLUDE</div>
-              <ul className="space-y-1.5 text-xs font-body text-[var(--text-muted)]">
+              <ul className="space-y-1.5 text-xs font-accent text-[var(--text-muted)]">
                 {['Your project idea or requirement', 'Your timeline / deadline', 'Your budget range (if applicable)', 'Where you heard about me'].map(i => (
                   <li key={i} className="flex gap-2"><span className="text-[var(--success)]">✓</span>{i}</li>
                 ))}
@@ -232,7 +239,7 @@ export default function ContactPage() {
                   </p>
                 )}
 
-                <p className="text-center text-xs font-body text-[var(--text-muted)] opacity-60 flex items-center justify-center gap-1.5 mt-2">
+                <p className="text-center text-xs font-accent text-[var(--text-muted)] opacity-60 flex items-center justify-center gap-1.5 mt-2">
                   🔒 Your information is safe. I never share your data.{' '}
                   <Link href="/privacy" className="text-[var(--neon-cyan)] hover:underline">Privacy Policy</Link>
                 </p>

@@ -1,6 +1,0 @@
-[build]
-command = "corepack enable && pnpm install --no-frozen-lockfile && pnpm run build"
-publish = "dist"
-
-[build.environment]
-NODE_VERSION = "18"
